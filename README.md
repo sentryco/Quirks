@@ -9,6 +9,7 @@ Adher to domain password quirks
 3. Derive PasswordRecipe from that struct
 
 ## Examples
+
 ```swift
 let jsonData = try! getQuirksJsonData()
 let domain = "google.com"
@@ -40,6 +41,12 @@ print("\(recipe.useSymbol)") // false
     }
 }
 ```
+
+### Installation:
+
+`.package(url: "https://github.com/sentryco/Quirks/", branch: "main")`
+
 ### Resources: 
+
 - Here is the password-rules.json: https://github.com/apple/password-manager-resources/blob/main/quirks/password-rules.json
 - For inspo a javascript interpreter can be found here: https://github.com/apple/password-manager-resources/blob/main/tools/PasswordRulesParser.js
